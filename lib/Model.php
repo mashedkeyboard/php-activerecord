@@ -1942,4 +1942,19 @@ class Model
 		}
 		return true;
 	}
+	
+	/** 
+	 * Converts to basic array.
+	 *
+	 * <code>
+	 * YourModel::all()->to_array()
+	 * </code>
+	 *
+	 * @param Options $options Options for the serialiser.
+	 * @return array Plain array version of the called listings.
+	 */
+	public function to_array(array $options=array())
+	{
+		return $this->serialize('array', $options);
+	}
 }
