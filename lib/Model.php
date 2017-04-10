@@ -1955,6 +1955,6 @@ class Model
 	 */
 	public function to_array(array $options=array())
 	{
-		return $this->serialize('array', $options);
+		return $this->serialize('Array', $options);
 	}
 }
